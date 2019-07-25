@@ -1,0 +1,6 @@
+projectKey=music-store
+serverUrl=http://localhost:8090
+serverVersion=7.1.0.11001
+dashboardUrl=http://localhost:8090/dashboard/index/music-store
+ceTaskId=AWwjbrDyHKFK8uZWAK17
+ceTaskUrl=http://localhost:8090/api/ce/task?id=AWwjbrDyHKFK8uZWAK17

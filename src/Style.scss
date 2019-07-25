@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+.style {
+  background: lightskyblue;
+  display: block;
+  margin: 10px;
+  text-align: left;
+  border: 1px solid black;
+  width: 28%;
+}
+.error {
+  color: red;
+  text-align: center;
+  display: block;
+  margin: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: black;
+  color: green;
+
+  .nav-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    list-style: none;
+  }
+}
+.div {
+  margin: 10px;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 5px;
+  align-items: center;
+}
+.searchbox {
+  margin-left: 750px;
+}
+.searchSong {
+  background: lightskyblue;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: left;
+  width: 28%;
+}
