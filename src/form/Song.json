@@ -1,44 +1,47 @@
-
- [
+[
     {
-        "id":1,
-        "name":"Cheap Thrills",
-        "artist":"Sia Furler",
-        "loaction":"http://www.Cheapthrills",
-        "album":"Private Album",
-        "duration":"4 min",
-        "tags":"Album Song"
-
+        "id": 1,
+        "name": "Cheap Thrills",
+        "artist": "Sia Furler",
+        "loaction": "http://www.Cheapthrills",
+        "album": "Private Album",
+        "duration": "4 min",
+        "tags": "Album Song"
     },
     {
-        "id":2,
-        "name":"Heartattack",
-        "artist":"Enrique Iglesias",
-        "loaction":"http://www.Heartattack",
-        "album":"Private Album",
-        "duration":"4 min",
-        "tags":"Album Song"
-
+        "id": 2,
+        "name": "Heartattack",
+        "artist": "Enrique Iglesias",
+        "loaction": "http://www.Heartattack",
+        "album": "Private Album",
+        "duration": "4 min",
+        "tags": "Album Song"
     },
     {
-        "id":3,
-        "name":"Duniyaa",
-        "artist":" Dhvani Bhanushali, Akhil",
-        "loaction":"http://www.Duniyaa",
-        "album":"Luka Chuppi",
-        "duration":" 3 min",
-        "tags":"Movie Song"
-
+        "id": 3,
+        "name": "Duniyaa",
+        "artist": " Dhvani Bhanushali, Akhil",
+        "loaction": "http://www.Duniyaa",
+        "album": "Luka Chuppi",
+        "duration": " 3 min",
+        "tags": "Movie Song"
     },
     {
-        "id":4,
-        "name":"Ishaqzaade",
-        "artist":" Javed Ali",
-        "loaction":"http://www.Ishaqzaade",
-        "album":"Ishaqzaade",
-        "duration":" 3 min",
-        "tags":"Movie Song"
-
+        "id": 4,
+        "name": "Ishaqzaade",
+        "artist": " Javed Ali",
+        "loaction": "http://www.Ishaqzaade",
+        "album": "Ishaqzaade",
+        "duration": " 3 min",
+        "tags": "Movie Song"
+    },
+    {
+        "id": 5,
+        "name": "Undiporaadhey",
+        "artist": " Sid Sriram",
+        "loaction": "http://www.Undiporaadhey",
+        "album": "Hushaaru",
+        "duration": " 3 min",
+        "tags": "Movie Song"
     }
-
 ]

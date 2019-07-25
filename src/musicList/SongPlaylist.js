@@ -15,7 +15,7 @@ class SongPlaylist extends Component {
 
     }
   }
-
+//Handling Search Button
   handleSearchBox = (e) => {
 
     this.setState({
@@ -24,7 +24,7 @@ class SongPlaylist extends Component {
     console.log({ SearchTerm: e.target.value })
 
   }
-
+// Handling the Search Function
   handleSearchFunction = () => {
 
     console.log(this.state.SearchTerm);
@@ -103,7 +103,7 @@ class SongPlaylist extends Component {
           </div>
         })}
         {this.state.resultlist.map((resultlist, index) => {
-          return <div className="col-sm-3 col-md-3 col-lg-3 sidebar" key={index}>{resultlist}</div>
+          return <div key={index}>{resultlist}</div>
         })}
       </div>
     )

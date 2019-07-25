@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Input from "../components/Input";
 import Button from "../components/Button";
-import '../Style.scss'
+import '../Style.scss';
+
+
 
 class Form extends Component {
   constructor(props) {
@@ -35,6 +37,7 @@ class Form extends Component {
     this.baseState = this.state;
   }
 
+  //Handling input
   handleInput = (e) => {
     console.log(e.target.value);
     let fields = this.state.fields;
@@ -43,7 +46,7 @@ class Form extends Component {
     console.log({ [e.target.name]: e.target.value });
 
   }
-
+  //Appending fields
   appenddata = () => {
 
     this.list.push(this.state.fields.name);
@@ -59,7 +62,7 @@ class Form extends Component {
     console.log(this.state.fields.datadisplay)
   }
 
-
+  //Handling Submit Button
   handleFormSubmit = (e) => {
     e.preventDefault();
 
@@ -73,7 +76,7 @@ class Form extends Component {
     this.setState({ fields });
   }
 
-
+  //Handling  Fields Validation 
   handleValidation = () => {
     let fields = this.state.fields;
     let errors = {};
@@ -108,9 +111,8 @@ class Form extends Component {
     return formIsValid;
   }
 
-
+  //Handling Clear Button
   handleClearForm = () => {
-    console.log(this.state.artist);
     this.setState(this.baseState);
   };
 
@@ -118,7 +120,8 @@ class Form extends Component {
     return (
       <div>
         <form className="container-fluid" onClick={() => this.handleFormSubmit}>
-          <div className="div">
+          <div className="form">
+          
             <Input
               inputType={'text'}
               title={'Song Title:'}
@@ -126,9 +129,9 @@ class Form extends Component {
               name={"name"}
               handleChange={this.handleInput}
             />
-          </div>
+        
           <div className="error">{this.state.errors.name}</div>
-          <div className="div">
+          
             <Input
               inputType={"text"}
               title={"Artist:"}
@@ -136,49 +139,49 @@ class Form extends Component {
               name={"artist"}
               handleChange={this.handleInput}
             />
-          </div>
+        
           <div className="error">{this.state.errors.artist}</div>
-          <div className="div">
-          <Input
-            inputType={"text"}
-            title={"Location:"}
-            value={this.state.fields["location"]}
-            name={"location"}
-            handleChange={this.handleInput}
-          />
-          </div>
+          
+            <Input
+              inputType={"text"}
+              title={"Location:"}
+              value={this.state.fields["location"]}
+              name={"location"}
+              handleChange={this.handleInput}
+            />
+          
           <div className="error">{this.state.errors.location}</div>
-          <div className="div">
-          <Input
-            inputType={"text"}
-            title={"Album:"}
-            value={this.state.fields["album"]}
-            name={"album"}
-            handleChange={this.handleInput}
-          /></div>
+         
+            <Input
+              inputType={"text"}
+              title={"Album:"}
+              value={this.state.fields["album"]}
+              name={"album"}
+              handleChange={this.handleInput}
+            />
           <div className="error">{this.state.errors.album}</div>
-          <div className="div">
-          <Input
-            inputType={"time"}
-            title={"Duration:"}
-            value={this.state.fields["duration"]}
-            name={"duration"}
-            handleChange={this.handleInput}
-          /></div>
+          
+            <Input
+              inputType={"time"}
+              title={"Duration:"}
+              value={this.state.fields["duration"]}
+              name={"duration"}
+              handleChange={this.handleInput}
+            />
           <div className="error">{this.state.errors.duration}</div>
-          <div className="div">
-          <Input
-            inputType={"text"}
-            title={"Tags:"}
-            value={this.state.fields["tags"]}
-            name={"tags"}
-            handleChange={this.handleInput}
-          /></div>
-          <div className="error">{this.state.errors.tags}</div>
-          <Button action={this.handleClearForm} title={"Clear"} />
-          <Button action={this.handleFormSubmit} title={"Submit"} />
-
-
+          
+            <Input
+              inputType={"text"}
+              title={"Tags:"}
+              value={this.state.fields["tags"]}
+              name={"tags"}
+              handleChange={this.handleInput}
+            />
+            <div className="error">{this.state.errors.tags}</div>
+            <Button action={this.handleClearForm} title={"Clear"} />
+            <Button action={this.handleFormSubmit} title={"Submit"} />
+            </div>
+         
         </form>
 
         <div>{this.state.datadisplay}</div>
